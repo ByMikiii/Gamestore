@@ -16,17 +16,23 @@
     <li class="h-full p-1  px-3 font-semibold rounded-lg">
       <img src="/Gamestore/Images/joystickicon.png" alt="xd!">
     </li>
-    <li class="h-full mr-3 px-3 py-1.5 font-semibold rounded-lg hover:bg-gray-400 hover:bg-opacity-40" href>
+    <li class="nav-item" href>
       <a href="/Gamestore/Store/">Store</a>
     </li>
-    <li class="h-full mr-3 px-3 py-1.5 font-semibold rounded-lg hover:bg-gray-400 hover:bg-opacity-40">
+    <li class="nav-item">
       <a href="/Gamestore/Library/">Library</a>
     </li>
-    <li class="h-full mr-3 px-3 py-1.5 font-semibold rounded-lg hover:bg-gray-400 hover:bg-opacity-40">
+    <li class="nav-item">
       <a href="/Gamestore/Community/">Community</a>
     </li>
-    <li class="h-full mr-3 px-3 py-1.5 font-semibold rounded-lg hover:bg-gray-400 hover:bg-opacity-400">
+    <li class="nav-item">
       <a href="/Gamestore/Profile/">Profile</a>
+    </li>
+    <li class="nav-item ml-auto">
+      <a href="">Login</a>
+    </li>
+    <li class="nav-item">
+      <a href="">Register</a>
     </li>
   </ul>
 
