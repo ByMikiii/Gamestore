@@ -1,15 +1,23 @@
 {
   "name": "gamestore",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i ./css/style.css -o ./css/tailwind.css"
+    "build-css": "tailwindcss build -i ./css/style.css -o ./css/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.0.24"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByMikiii/Gamestore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ByMikiii/Gamestore/issues"
+  },
+  "homepage": "https://github.com/ByMikiii/Gamestore#readme",
+  "description": ""
 }
