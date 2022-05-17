@@ -1,9 +1,10 @@
 <?php 
-$title = 'Main Page';
+$title = 'Store';
 $iconPath = '/Gamestore/Images/joystickicon.png';
-include './parts/header.php';
-require './scripts/getAllGames.php';
+include '../parts/header.php';
+require '../scripts/getAllGames.php';
 ?>
+
 <main class="flex flex-wrap justify-center mt-20 mx-28 ">
   <?php
   foreach ($games as $game) : ?>
@@ -22,6 +23,7 @@ require './scripts/getAllGames.php';
   <?php 
   endforeach; ?>
 </main>
+
 <?php 
-include './parts/footer.php';
+include '../parts/footer.php';
 ?>
