@@ -5,7 +5,6 @@ include '../parts/header.php';
 require '../scripts/getAllGames.php';
 ?>
 
-
 <?php 
 include '../parts/footer.php';
 ?>

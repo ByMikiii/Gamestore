@@ -4,6 +4,8 @@ $iconPath = '/Gamestore/Images/joystickicon.png';
 include './parts/header.php';
 require './scripts/getAllGames.php';
 ?>
+<p id=message class='message text-green-800'>
+  <?php if (isset($_POST['message'])){echo $_POST['message'];}?></p>
 <main class="flex flex-wrap justify-center mt-20 mx-28 ">
   <?php
   foreach ($games as $game) : ?>

@@ -10,30 +10,46 @@
   <link rel="stylesheet" href="/Gamestore/css/tailwind.css">
 </head>
 
-<body class="bg-gradient-to-r from-gray-300 to-gray-400">
+<body class="bg-gradient-to-r from-gray-300 to-gray-400 min-h-full font">
+  <header>
+    <ul class=" flex items-center w-full h-12 p-1 text-lg text-gray-900">
+      <li class="h-full p-1  px-3 font-semibold rounded-lg">
+        <img src="/Gamestore/Images/joystickicon.png" alt="xd!">
+      </li>
+      <li class="nav-item" href>
+        <a href="/Gamestore/Store/">Store</a>
+      </li>
+      <li class="nav-item">
+        <a href="/Gamestore/Library/">Library</a>
+      </li>
+      <li class="nav-item">
+        <a href="/Gamestore/Community/">Community</a>
+      </li>
+      <li class="nav-item">
+        <a href="/Gamestore/Profile/">Profile</a>
+      </li>
+      <span class="loggedusername">
+        <?php 
+          session_start();
+        if(isset($_SESSION['username'])){
+          echo $_SESSION['username'];
+          } ?>
+      </span>
+      <?php 
+      if(!isset($_SESSION['username'])) : ?>
+      <li class="nav-item ml-auto">
+        <a href="/Gamestore/Login/">Login</a>
+      </li>
+      <li class="nav-item">
+        <a href="/Gamestore/Register/">Register</a>
+      </li>
+      <?php
+      else : ?>
+      <li class="nav-item ml-auto">
+        <a href="/Gamestore/scripts/logoutscript.php">Logout</a>
+      </li>
+      <?php endif ?>
 
-  <ul class="flex items-center w-full h-12 p-1 text-lg text-gray-900">
-    <li class="h-full p-1  px-3 font-semibold rounded-lg">
-      <img src="/Gamestore/Images/joystickicon.png" alt="xd!">
-    </li>
-    <li class="nav-item" href>
-      <a href="/Gamestore/Store/">Store</a>
-    </li>
-    <li class="nav-item">
-      <a href="/Gamestore/Library/">Library</a>
-    </li>
-    <li class="nav-item">
-      <a href="/Gamestore/Community/">Community</a>
-    </li>
-    <li class="nav-item">
-      <a href="/Gamestore/Profile/">Profile</a>
-    </li>
-    <li class="nav-item ml-auto">
-      <a href="">Login</a>
-    </li>
-    <li class="nav-item">
-      <a href="">Register</a>
-    </li>
-  </ul>
+    </ul>
 
   </header>
