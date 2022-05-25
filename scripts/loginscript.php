@@ -11,6 +11,8 @@ if ($result->num_rows > 0) {
   session_start();
   $_SESSION['username'] = $username;
 
+  require 'getOwnedGames.php';
+
   $message = 'Uspesne prihlaseny!';
   $path = '/Gamestore/';
 }

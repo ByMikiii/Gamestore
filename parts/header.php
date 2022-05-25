@@ -16,7 +16,7 @@
       <li class="h-full p-1  px-3 font-semibold rounded-lg">
         <img src="/Gamestore/Images/joystickicon.png" alt="xd!">
       </li>
-      <li class="nav-item" href>
+      <li class="nav-item">
         <a href="/Gamestore/Store/">Store</a>
       </li>
       <li class="nav-item">
@@ -30,7 +30,10 @@
       </li>
       <span class="loggedusername">
         <?php 
-          session_start();
+          if(!isset($_SESSION)) 
+          { 
+              session_start(); 
+          } 
         if(isset($_SESSION['username'])){
           echo $_SESSION['username'];
           } ?>

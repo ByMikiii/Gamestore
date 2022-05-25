@@ -1,6 +1,7 @@
 /node_modules
 /css/tailwind.css
 /Images/Games
+/Images/Countries
 /tailwind.config.js
 /package-lock.json
 /package.json
